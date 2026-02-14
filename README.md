@@ -1,3 +1,13 @@
+> ⚠️ **VEIP 0.1.0 – Public Working Draft**
+>
+> This version of the Veraxis Execution Integrity Protocol (VEIP) is released as a Public Working Draft.
+>
+> The specification is stable in principle but may undergo structural clarification, terminology refinement, and formal consistency updates prior to a 1.0 release.
+>
+> Implementations built against this draft should explicitly declare conformance to “VEIP 0.1.0 (Public Working Draft)”.
+>
+> Breaking changes may occur before 1.0.
+
 # Veraxis Execution Integrity Protocol (VEIP) Specification
 
 ## Overview
