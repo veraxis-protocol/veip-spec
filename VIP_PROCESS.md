@@ -57,4 +57,4 @@ All VIP discussions, votes, and decisions shall be publicly archived.
 
 ## 6. Invariants
 
-VIPs may not violate foundational VEIP invariants without supermajority approval and explicit justification.
+VIP(s) may not violate foundational VEIP invariants without supermajority approval and explicit justification.
