@@ -63,3 +63,12 @@ Official certification and use of VEIP certification marks are governed separate
 ## Version
 
 Current Specification Version: 0.1.0 (Draft)
+
+## Specification Documents
+
+- [State-Transition Model](spec/state-transition-model.md)
+- [Supervisory Verification Interface](spec/supervisory-verification-interface.md)
+- [Evidence Pack Schema](spec/evidence-pack-schema.md)
+- [Formal Invariants](spec/formal-invariants.md)
+- [Conformance Test Suite](spec/conformance-test-suite.md)
+
