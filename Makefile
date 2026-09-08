@@ -9,7 +9,7 @@ help:
 
 check:
 	@set -euo pipefail; \
-	req=(README.md LICENSE LICENSE.md GOVERNANCE.md VERSIONING.md VIP_PROCESS.md schemas/veip-evidence-pack.schema.json); \
+	req=(README.md LICENSE GOVERNANCE.md VERSIONING.md VIP_PROCESS.md schemas/veip-evidence-pack.schema.json); \
 	for f in "$${req[@]}"; do \
 	  if [[ ! -f "$$f" ]]; then echo "Missing required file: $$f"; exit 1; fi; \
 	done; \
