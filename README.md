@@ -10,6 +10,16 @@
 
 # Veraxis Execution Integrity Protocol (VEIP) Specification
 
+## Role in Open Institutional Computation
+
+**Category:** Open Institutional Computation  
+**This component:** Normative execution-integrity protocol specification — the runtime boundary at which established machine-operational authority/control state is bound to an exact action and to verifiable evidence  
+**Upstream:** Machine-operational authority or control state, already established through authorized institutional interpretation and admission (the Veraxis reference path for that upstream problem is [OIC — Open Institutional Compiler](https://github.com/veraxis-protocol/Institutional-Compiler))  
+**Downstream:** Conformant implementations, supervisory verification, and Evidence Packs consumed by verifiers, registries, and enforcement runtimes  
+**Canonical category thesis:** https://github.com/veraxis-protocol/institutional-continuity/blob/main/THESIS.md
+
+Architectural role does not imply production readiness; see this repository's status, versioning, and conformance documentation for the exact demonstrated scope.
+
 ## Overview
 
 The Veraxis Execution Integrity Protocol (VEIP) defines a deterministic execution-control standard for AI and automated systems.
@@ -25,6 +35,16 @@ VEIP formalizes:
 VEIP is an open specification.
 
 This repository contains the normative standard documents and JSON schemas that define VEIP behavior.
+
+### VEIP's position in the architecture
+
+VEIP is the execution-integrity protocol within Open Institutional Computation. It consumes machine-operational authority or control state established upstream and binds/preserves that state across the boundary to an exact proposed action, runtime classification, execution transition, and verifiable evidence.
+
+VEIP does not determine the institutional meaning of governing documents, perform institutional admission, or originate institutional authority.
+
+OIC provides the Veraxis reference path for the upstream institutional compilation problem.
+
+An Evidence Pack / Authorization Evidence Pack is a downstream evidence artifact used by the architecture. It is not VEIP itself and does not create the authority it records.
 
 ## Foundational Invariants
 
