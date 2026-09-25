@@ -1,0 +1,352 @@
+{
+  "static_audit": {
+    "recover_one_names": [
+      "LocalNetwork",
+      "Task",
+      "deque",
+      "detector",
+      "h",
+      "int",
+      "len",
+      "max_visits",
+      "net",
+      "q",
+      "radius",
+      "seen",
+      "st",
+      "task",
+      "u",
+      "v"
+    ],
+    "recover_one_attribute_access": [
+      "net.ledger",
+      "net.local_state",
+      "net.messages",
+      "net.neighbors",
+      "net.probe",
+      "net.send",
+      "net.try_claim",
+      "q.append",
+      "q.popleft",
+      "seen.add",
+      "task.id"
+    ],
+    "recover_one_references_failed_adj_states": [],
+    "recover_one_touches_private_net_fields": []
+  },
+  "instrumentation_fidelity": "PASS (instrumented run_one == uninstrumented run_one, n=1000 seed=1000, all modes)",
+  "n1000": {
+    "random": {
+      "local_msr": {
+        "mean": 0.978,
+        "sd": 0.0024037008503093285,
+        "ci95": [
+          0.9762806154589505,
+          0.9797193845410495
+        ],
+        "min": 0.973,
+        "max": 0.981
+      },
+      "central_msr_mean": 1.0,
+      "reassignment_completion": {
+        "mean": 0.89,
+        "sd": 0.012018504251546642,
+        "ci95": [
+          0.8814030772947525,
+          0.8985969227052475
+        ],
+        "min": 0.865,
+        "max": 0.905
+      },
+      "detection_events_mean": 200,
+      "failed_agents": 200,
+      "recovery_messages_mean": 12779,
+      "messages_per_failed_task_mean": 63.895,
+      "neighbor_probes_mean": 6444.6,
+      "role_binding_violations_total": 0,
+      "message_mix_fraction": {
+        "local_candidate_check": 0.08819938962360122,
+        "neighbor_probe": 0.5043117614836842,
+        "search_forward": 0.39355974645903435,
+        "claim": 0.013929102433680257
+      },
+      "probes_to_dead_nodes_fraction": 0.21961021630512367,
+      "perturbation_locality_as_coded_mean": 0.9937,
+      "per_recovery_footprint_nodes": {
+        "mean": 33.223,
+        "median": 28.0,
+        "max": 81,
+        "fraction_of_n_mean": 0.033222999999999996
+      },
+      "state_change_fraction_claims_only_mean": 0.178,
+      "state_change_fraction_claims_plus_forward_recipients_mean": 0.7923,
+      "candidate_checks_per_recovery_mean": 5.6355,
+      "candidate_checks_per_UNRECOVERED_task_mean": 13.027272727272727,
+      "unrecovered_tasks_total": 220,
+      "recovery_hops_distribution": {
+        "0": 332,
+        "1": 1045,
+        "2": 403
+      }
+    },
+    "targeted_high_degree": {
+      "local_msr": {
+        "mean": 0.9789,
+        "sd": 0.003414023367751834,
+        "ci95": [
+          0.9764579244811021,
+          0.9813420755188978
+        ],
+        "min": 0.975,
+        "max": 0.986
+      },
+      "central_msr_mean": 1.0,
+      "reassignment_completion": {
+        "mean": 0.8945000000000001,
+        "sd": 0.017070116838759173,
+        "ci95": [
+          0.882289622405511,
+          0.9067103775944891
+        ],
+        "min": 0.875,
+        "max": 0.93
+      },
+      "detection_events_mean": 200,
+      "failed_agents": 200,
+      "recovery_messages_mean": 12680.6,
+      "messages_per_failed_task_mean": 63.403,
+      "neighbor_probes_mean": 6411.1,
+      "role_binding_violations_total": 0,
+      "message_mix_fraction": {
+        "local_candidate_check": 0.0887734018895005,
+        "neighbor_probe": 0.5055833320189896,
+        "search_forward": 0.3915351008627352,
+        "claim": 0.014108165228774663
+      },
+      "probes_to_dead_nodes_fraction": 0.2255775139991577,
+      "perturbation_locality_as_coded_mean": 0.9928,
+      "per_recovery_footprint_nodes": {
+        "mean": 33.0555,
+        "median": 23.0,
+        "max": 81,
+        "fraction_of_n_mean": 0.0330555
+      },
+      "state_change_fraction_claims_only_mean": 0.1789,
+      "state_change_fraction_claims_plus_forward_recipients_mean": 0.7917000000000001,
+      "candidate_checks_per_recovery_mean": 5.6285,
+      "candidate_checks_per_UNRECOVERED_task_mean": 13.061611374407583,
+      "unrecovered_tasks_total": 211,
+      "recovery_hops_distribution": {
+        "0": 322,
+        "1": 1040,
+        "2": 427
+      }
+    },
+    "targeted_local_cut": {
+      "local_msr": {
+        "mean": 0.9516,
+        "sd": 0.002756809750418047,
+        "ci95": [
+          0.9496280341179422,
+          0.9535719658820578
+        ],
+        "min": 0.948,
+        "max": 0.956
+      },
+      "central_msr_mean": 1.0,
+      "reassignment_completion": {
+        "mean": 0.758,
+        "sd": 0.013784048752090234,
+        "ci95": [
+          0.748140170589711,
+          0.767859829410289
+        ],
+        "min": 0.74,
+        "max": 0.78
+      },
+      "detection_events_mean": 169,
+      "failed_agents": 200,
+      "recovery_messages_mean": 10808.3,
+      "messages_per_failed_task_mean": 54.0415,
+      "neighbor_probes_mean": 5337.2,
+      "role_binding_violations_total": 0,
+      "message_mix_fraction": {
+        "local_candidate_check": 0.08674814725720048,
+        "neighbor_probe": 0.4938056863706596,
+        "search_forward": 0.40541990877381273,
+        "claim": 0.014026257598327211
+      },
+      "probes_to_dead_nodes_fraction": 0.17898898298733418,
+      "perturbation_locality_as_coded_mean": 0.959,
+      "per_recovery_footprint_nodes": {
+        "mean": 32.5810650887574,
+        "median": 23.0,
+        "max": 81,
+        "fraction_of_n_mean": 0.0325810650887574
+      },
+      "state_change_fraction_claims_only_mean": 0.15159999999999998,
+      "state_change_fraction_claims_plus_forward_recipients_mean": 0.7893,
+      "candidate_checks_per_recovery_mean": 5.54792899408284,
+      "candidate_checks_per_UNRECOVERED_task_mean": 13.045977011494253,
+      "unrecovered_tasks_total": 174,
+      "recovery_hops_distribution": {
+        "0": 247,
+        "1": 970,
+        "2": 299
+      }
+    }
+  },
+  "recomputed_from_raw_n1000": {
+    "random": {
+      "local_msr": 0.978,
+      "reassignment_completion_rate": 0.89,
+      "recovery_messages": 12779,
+      "messages_per_failed_task": 63.895,
+      "perturbation_locality": 0.9937,
+      "neighbor_probes": 6444.6
+    },
+    "targeted_high_degree": {
+      "local_msr": 0.9789,
+      "reassignment_completion_rate": 0.8945000000000001,
+      "recovery_messages": 12680.6,
+      "messages_per_failed_task": 63.403,
+      "perturbation_locality": 0.9928,
+      "neighbor_probes": 6411.1
+    },
+    "targeted_local_cut": {
+      "local_msr": 0.9516,
+      "reassignment_completion_rate": 0.758,
+      "recovery_messages": 10808.3,
+      "messages_per_failed_task": 54.0415,
+      "perturbation_locality": 0.959,
+      "neighbor_probes": 5337.2
+    }
+  },
+  "recomputed_loglog_slopes": {
+    "random": 1.0349202318055866,
+    "targeted_high_degree": 1.0177927553535284,
+    "targeted_local_cut": 1.0360931831628406
+  },
+  "messages_per_failed_task_by_n": {
+    "random": {
+      "250": 58.678,
+      "500": 63.214,
+      "1000": 63.895,
+      "2000": 63.381750000000004
+    },
+    "targeted_high_degree": {
+      "250": 61.782,
+      "500": 61.023,
+      "1000": 63.403,
+      "2000": 63.559
+    },
+    "targeted_local_cut": {
+      "250": 49.652,
+      "500": 49.679,
+      "1000": 54.0415,
+      "2000": 52.477
+    }
+  },
+  "reassignment_completion_by_n": {
+    "random": {
+      "250": 0.9259999999999999,
+      "500": 0.886,
+      "1000": 0.89,
+      "2000": 0.886
+    },
+    "targeted_high_degree": {
+      "250": 0.92,
+      "500": 0.905,
+      "1000": 0.8945000000000001,
+      "2000": 0.8935
+    },
+    "targeted_local_cut": {
+      "250": 0.8019999999999999,
+      "500": 0.777,
+      "1000": 0.758,
+      "2000": 0.7635
+    }
+  },
+  "sensitivity_max_visits_n1000": {
+    "max_visits=40": {
+      "random": {
+        "reassign": 0.727,
+        "msgs_per_task": 46.3055,
+        "locality_as_coded": 0.9749
+      },
+      "targeted_high_degree": {
+        "reassign": 0.718,
+        "msgs_per_task": 45.457,
+        "locality_as_coded": 0.9712999999999999
+      },
+      "targeted_local_cut": {
+        "reassign": 0.6214999999999999,
+        "msgs_per_task": 39.7165,
+        "locality_as_coded": 0.9384
+      }
+    },
+    "max_visits=80": {
+      "random": {
+        "reassign": 0.89,
+        "msgs_per_task": 63.895,
+        "locality_as_coded": 0.9937
+      },
+      "targeted_high_degree": {
+        "reassign": 0.8945000000000001,
+        "msgs_per_task": 63.403,
+        "locality_as_coded": 0.9928
+      },
+      "targeted_local_cut": {
+        "reassign": 0.758,
+        "msgs_per_task": 54.0415,
+        "locality_as_coded": 0.959
+      }
+    },
+    "max_visits=160": {
+      "random": {
+        "reassign": 0.984,
+        "msgs_per_task": 73.5855,
+        "locality_as_coded": 0.9975
+      },
+      "targeted_high_degree": {
+        "reassign": 0.984,
+        "msgs_per_task": 72.8485,
+        "locality_as_coded": 0.9963
+      },
+      "targeted_local_cut": {
+        "reassign": 0.8374999999999999,
+        "msgs_per_task": 61.6445,
+        "locality_as_coded": 0.9648
+      }
+    },
+    "max_visits=320": {
+      "random": {
+        "reassign": 1.0,
+        "msgs_per_task": 75.5005,
+        "locality_as_coded": 0.9978
+      },
+      "targeted_high_degree": {
+        "reassign": 1.0,
+        "msgs_per_task": 74.076,
+        "locality_as_coded": 0.9967
+      },
+      "targeted_local_cut": {
+        "reassign": 0.845,
+        "msgs_per_task": 62.3045,
+        "locality_as_coded": 0.965
+      }
+    }
+  },
+  "small_localized_perturbation_n1000": {
+    "local_cut_fraction=0.01": {
+      "failed": 10,
+      "reassign": 0.8500000000000001,
+      "locality_as_coded": 0.2245
+    },
+    "local_cut_fraction=0.05": {
+      "failed": 50,
+      "reassign": 0.8,
+      "locality_as_coded": 0.7031
+    }
+  }
+}

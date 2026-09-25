@@ -1,0 +1,12 @@
+EXPECTED_ADJUDICATION_RESULTS.json: OK
+dice_1000_demo.py: OK
+dice_1000_demo_v2.py: OK
+dice_1000_demo_v3_strict_locality.py: OK
+reproduce_and_compare.py: OK
+results/experiment_manifest.json: OK
+results/summary.json: OK
+results_v2/summary.json: OK
+results_v3_strict_locality/experiment_manifest.json: OK
+results_v3_strict_locality/raw_runs.jsonl: OK
+results_v3_strict_locality/summary.json: OK
+verify_static_package.py: OK

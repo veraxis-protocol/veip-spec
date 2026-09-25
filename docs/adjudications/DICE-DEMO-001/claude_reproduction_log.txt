@@ -1,0 +1,7 @@
+RUN python3 <pkg>/dice_1000_demo.py --out <tmp>/v1 --seeds 10
+v1 SUMMARY=PASS
+RUN python3 <pkg>/dice_1000_demo_v2.py --out <tmp>/v2 --seeds 10
+v2 SUMMARY=PASS
+RUN python3 <pkg>/dice_1000_demo_v3_strict_locality.py --out <tmp>/v3 --seeds 10
+v3 SUMMARY=PASS
+SUMMARY_REPRODUCTION=PASS
